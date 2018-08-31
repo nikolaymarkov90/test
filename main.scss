@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div[id=game-area] {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(79, 90, 110, 1);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+
+    &::selection {
+        background: transparent;
+    }
+
+    &::-moz-selection {
+        background: transparent;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(21, 93, 226, 0.2);
+    }
+}
+
+.btn-area {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn1 {
+    border: none;
+    padding: 10px;
+    background: linear-gradient(45deg, rgba(67, 91, 133, 0.7), rgba(67, 91, 133, 1));
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: rgba(67, 91, 133, 1);
+        cursor: pointer;
+    }
+}
+
+.modal-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.7);
+}
+
+.modal-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+
+    div {
+        text-align: center;
+    }
+}
